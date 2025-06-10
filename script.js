@@ -9,6 +9,15 @@ document.querySelectorAll('nav a').forEach(link => {
     }
   });
 });
+const toggleBtn = document.getElementById("togglemenu");
+const navA = document.getElementById(".nav-a");
+const navB= document.getElementById(".nav-b");
+if (toggleBtn) {
+  toggleBtn.addEventListener("click" , () => {
+    navA.classList.toggle("show");
+    navB.classList.toggle("show");
+  });
+}
 
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {

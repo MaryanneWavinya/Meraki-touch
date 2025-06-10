@@ -98,13 +98,14 @@ a {
   padding: 4rem;
   margin: 2rem 0;
   display: flex;
-  gap: 1rem;
+  overflow-x:hidden;
   justify-content: center;
 }
 
 .gown-card img {
-  width: 50%;
+  width: 100%;
   border-radius: 10px;
+  
 }
 
 
@@ -333,7 +334,42 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-a,
+  .nav-b {
+    display: none; 
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 0;
+  }
+
+  .nav-a.show,
+  .nav-b.show {
+    display: flex;
+  }
+
+  .navlinks-a li,
+  .navlinks-b li {
+    margin: 10px 0;
+  }
+
+  .logo {
+    order: -1; 
+    margin-bottom: 1rem;
+  }
+}
   .hero-section h2 {
     font-size: 1.5rem;
   }
@@ -347,7 +383,7 @@ a {
   .gown-gallery img {
     width: 100%;
   }
-}
+
 
 @media (max-width: 480px) {
 
