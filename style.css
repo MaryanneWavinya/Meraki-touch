@@ -48,7 +48,11 @@ a {
   align-items: center;
   flex-wrap: wrap;
 }
-
+   .togglemenu .bar{
+    width: 25px;
+    height: 3px;
+    border-radius: 2px;
+  }
 
 .logo {
   font-size: 1.75rem;
@@ -119,8 +123,8 @@ a {
 
 #fabrics {
   display: flex;
-
-  div {
+}
+  div #fabrics{
 
     h2,
     h3,
@@ -128,7 +132,7 @@ a {
       display: grid;
     }
   }
-}
+
 
 .gown-gallery {
   display: flex;
@@ -345,6 +349,7 @@ a {
     width: 100%;
   }
 
+
   .nav-a,
   .nav-b {
     display: none; 
@@ -358,6 +363,7 @@ a {
   .nav-a.show,
   .nav-b.show {
     display: flex;
+    flex-direction: column;
   }
 
   .navlinks-a li,
